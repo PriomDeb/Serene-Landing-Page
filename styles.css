@@ -240,3 +240,118 @@ body {
   height: 30px;
   width: 30px;
 }
+
+.trainers {
+  /* display: flex;
+  gap: 20px; */
+  padding-bottom: 62px;
+  padding: 60px 50px 62px 50px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 50px;
+}
+
+.discover {
+  background-color: #087f5b;
+  color: #fff;
+  width: 250px;
+  height: 350px;
+  border-radius: 24px;
+  padding: 20px;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.discover-title {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.discover-description {
+  font-size: 12px;
+  color: #dfdfdf;
+  font-weight: 300;
+}
+
+.yoga {
+  /* background: url("Pixabay/ai-generated-8339794.jpg"); */
+  /* background-size: cover; */
+  width: 250px;
+  height: 350px;
+  border-radius: 24px;
+
+  /* display: flex;
+  align-items: end; */
+
+  overflow: hidden;
+  position: relative;
+}
+
+.yoga:hover {
+  transform: scale(110%);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.yoga-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.glass {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 20px;
+  width: 220px;
+  height: 70px;
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.name,
+.trainer-name {
+  color: #fff;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.trainer-name {
+  grid-column: 1 / 2;
+  font-size: 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  stroke: #343a40;
+  background: #fff;
+  border-radius: 50%;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  justify-self: end;
+}
